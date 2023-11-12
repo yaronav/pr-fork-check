@@ -44,15 +44,13 @@ jobs:
             echo "pipeline.trigger_parameters.gitlab.x_gitlab_event_id: << pipeline.trigger_parameters.gitlab.x_gitlab_event_id >>"
             echo "pipeline.trigger_parameters.gitlab.is_fork_merge_request: << pipeline.trigger_parameters.gitlab.is_fork_merge_request >>"
       - run:
-            name: "GitHub-BB Parameters"
-            command: |
-              echo "pipeline.project.git_url: << pipeline.project.git_url >>"
-              echo "pipeline.git.tag: << pipeline.git.tag >>"
-              echo "pipeline.git.branch: << pipeline.git.branch >>"
-              echo "pipeline.schedule.name: << pipeline.schedule.name >>"
-      - run:
-          name: "Branch Name"
-          command: "echo Branch name: ${CIRCLE_BRANCH}"
+          name: "GitHub-BB Parameters"
+          command: |
+            echo "pipeline.project.git_url: << pipeline.project.git_url >>"
+            echo "pipeline.git.tag: << pipeline.git.tag >>"
+            echo "pipeline.git.branch: << pipeline.git.branch >>"
+            echo "pipeline.schedule.name: << pipeline.schedule.name >>"
+
 
 
 # Orchestrate jobs using workflows
