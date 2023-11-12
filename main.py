@@ -1,2 +1,2 @@
-def function big():
+def function big(main):
   pass
