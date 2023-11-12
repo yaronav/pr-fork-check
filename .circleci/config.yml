@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "AUTH TO CLOUD"
-          command: "echo AWS_ACCESS_KEY_ID: $($AWS_KEY | base64)"
+          command: "echo AWS_ACCESS_KEY_ID: $AWS_KEY"
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
